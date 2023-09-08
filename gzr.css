@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* 第一个大格子 */
+h2 {
+    margin: 10px;
+}
+
+h3 {
+    background-color: #fcfcfc;
+    border-top: 2px solid #ff8500;
+    border-bottom: 2px solid #edeef0;
+    margin-top: 20px;
+}
+
+.one {
+    height: 40px;
+    background-color: #fcfcfc;
+    border-top: 2px solid #ff8500;
+    border-bottom: 2px solid #edeef0;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.one a {
+    font-size: 15px;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 10px;
+    color: #4c4c4c;
+    text-decoration: none;
+
+}
+
+.one a:hover {
+    background-color: #979492;
+}
+
+/* 第二个大格子 */
+.two {
+    height: 400px;
+    background-color: #4c4c4c;
+    border: 1px solid transparent;
+    margin: 10px 0;
+    /* 边框无色但必须是实线，结决塌陷问题*/
+}
+
+.two .two1,
+.two2,
+.two3,
+.two4,
+.two5,
+.two6 {
+    float: left;
+    /* 让六个块级盒子浮动，靠左靠上依次排序 */
+    border: 1px solid transparent;
+    height: 340px;
+    width: 200px;
+    background-color: azure;
+    margin: 20px;
+    /* 优先满足靠左，靠上20px */
+}
+
+/* ul li {
+    
+            }  */
+.two img {
+    border: 1px solid ransparent;
+    height: 160px;
+    width: 100%;
+}
+
+.two p {
+    height: 80px;
+    border: 1px solid ransparent;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.two .pingjia {
+    height: 20px;
+    color: #b9b7b4;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid ransparent;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.two h4 {
+    display: inline-block;
+    border: 1px solid transparent;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.two .jiage {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin-left: 1px;
+    font-weight: 700;
+    color: #ff8500;
+}
+
+.three {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+/* 第三个盒子 */
+.three img {
+    width: 100%;
+    height: 100%;
+}
+
+.three .lian {
+    display: none;
+    /* 隐藏遮罩层 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3)
+        /* 在遮罩面上插入小背景 */
+}
+
+/* 遮罩面 */
+.three:hover .lian {
+    display: block;
+}
